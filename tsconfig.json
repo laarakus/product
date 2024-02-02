@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "outDir": ".build",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@use_cases/*": ["domain/use_cases/*"],
+      "@repositories/*": ["domain/repositories/*"]
+    }
+  },
+  "noEmit": true,
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
+}
